@@ -24,7 +24,6 @@ app.post("/submit", (req, res) => {
     console.log("Updated data in file!");
   });
 
-  //   res.send("<h1>Form submitted</h1>");
   res.redirect("/display.html");
 });
 
