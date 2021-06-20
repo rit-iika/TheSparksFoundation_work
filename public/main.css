@@ -361,6 +361,11 @@ footer ul {
       .nav li a{
         font-size: 1rem;
       }
+      .knowus ,.mailat, .socialmedia, .address ,.help{
+          padding:12px;
+          margin:1px;
+        }
+      
     }
 
 
