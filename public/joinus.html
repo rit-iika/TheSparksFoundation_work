@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOINUS</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        background: #85dcb8;
+        opacity: 80%;
+      }
+      .box {
+        height: 800px;
+        /* border: 2px solid black; */
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .form {
+        width: 70%;
+        height: 720px;
+        /* border: 2px solid red; */
+        border-radius: 18px;
+        background-color: white;
+        opacity: 80%;
+        padding: 30px;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h3 {
+        margin: 0px;
+        padding: 2px;
+        text-align: center;
+        font-size: 30px;
+      }
+      h4 {
+        text-align: center;
+      }
+      h3,
+      h4 {
+        color: black;
+        opacity: 100%;
+      }
+
+      .myInput {
+        width: 400px;
+        padding: 8px;
+        margin: 8px 0px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 4px;
+        outline: none;
+        font-size: 18px;
+      }
+      #btn {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 10px;
+        width: 195px;
+        border: 3px solid black;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: transparent;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: darkblue;
+      }
+      #footer {
+        height: 50px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        font-size: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form class="form" action="/submit" method="POST">
+        
+        <h3>WELCOME TO THE FAMILY !!</h3>
+        <h4>Please fill this form to join us !!</h4>
+
+        <input
+          class="myInput"
+          type="text"
+          name="name"
+          placeholder="Enter your name:"
+        />
+        <input
+          class="myInput"
+          type="phone"
+          name="phone"
+          placeholder="Enter your phone number:"
+        />
+        <input
+          class="myInput"
+          type="email"
+          name="email"
+          placeholder="Enter your email:"
+        />
+        <input
+          class="myInput"
+          type="age"
+          name="age"
+          placeholder="Enter your age:"
+        />
+        <input
+          class="myInput"
+          type="text"
+          name="address"
+          placeholder="Enter your address:"
+        />
+        <textarea
+          class="myInput"
+          type="text"
+          name="desc"
+          cols="20"
+          rows="4"
+          placeholder="why do you want to join us:"
+        ></textarea>
+
+        <br /><br />
+        <div>
+          I accept that all the information provided by me is true to the best
+          of my knowledge: <input type="checkbox" value="tickme" /><br />
+        </div>
+        <br />
+        <button id="btn" type="submit"> Submit</button>
+      </form>
+    </div>
+    <footer id="footer">
+        All rights are reserved. Copyright © 2023-TheSparksFoundationCharity.com
+    </footer>
+  </body>
+  
+      <script type="text/javascript">
+        function submitform()
+        {
+            document.forms["myform"].submit();
+        }
+        </script>
+
+</html>
+ 
